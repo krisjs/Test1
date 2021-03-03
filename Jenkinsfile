@@ -6,20 +6,28 @@ agent any
 stages {
 
 stage ("test1"){
+  
+  steps{
 
 echo 'test1 completed'
+  }
 
 }
 
 stage ("test2"){
 
-echo 'test3 completed'
+steps{
+
+echo 'test2 completed'
+  }
 
 }
 
 stage ("test3"){
-echo 'test3 completed'
+steps{
 
+echo 'test3 completed'
+  }
 
 }
 

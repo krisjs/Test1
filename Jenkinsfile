@@ -7,7 +7,7 @@ pipeline {
 			    sh 'ls'
 					sh 'mvn clean compile'
 					echo 'findbuild scans'
-					git credentialsId: '0ee5b254-2b1a-4442-9791-6bae35ec6bb7', url: 'https://github.com/krisjs/Test1.git'
+					git credentialsId: '0ee5b254-2b1a-4442-9791-6bae35ec6bb7', url: 'https://github.com/krisjs/docker-spring-boot.git'
 					sh 'ls'
 					sh 'mvn clean install'
 				
